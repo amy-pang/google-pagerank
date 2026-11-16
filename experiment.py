@@ -1,4 +1,5 @@
 import networkx as nx
-G=nx.barabasi_albert_graph(60,41)
-pr=nx.pagerank(G,0.4)
-pr
+G = nx.DiGraph(nx.path_graph(4))
+pr = nx.pagerank(G, alpha=0.9)
+
+print(pr)
